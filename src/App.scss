@@ -238,7 +238,6 @@ $green: #042f39;
   }
   .main {
     align-self: center;
-    flex: 1 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -249,10 +248,69 @@ $green: #042f39;
       flex: 1;
       align-self: stretch;
       border-right: solid 3px $black;
+      padding: 50px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      h1 {
+        font-size: 70px;
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-top: 2px;
+        margin-right: 5px;
+      }
+      .about {
+        font-size: 30px;
+        max-width: 70%;
+        text-align: right;
+      }
+      .context {
+        font-size: 20px;
+        max-width: 80%;
+        text-align: right;
+      }
+      .stack {
+        border-top: 2px solid $black;
+        align-self: flex-start;
+        padding: 0 50px;
+        font-size: 20px;
+      }
+      .year {
+        font-size: 16px;
+      }
     }
     .imageLink {
       flex: 1;
       align-self: stretch;
+      padding: 50px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .image {
+        max-width: 700px;
+
+        .desktop {
+          position: relative;
+          width: 100%;
+          z-index: -1;
+        }
+        .mobile {
+          width: 20%;
+          margin-bottom: -280px;
+        }
+      }
+
+      .link {
+        margin-top: 30px;
+        font-size: 20px;
+      }
     }
   }
 }
