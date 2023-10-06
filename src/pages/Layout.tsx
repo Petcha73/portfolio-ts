@@ -31,9 +31,28 @@ function Layout() {
         <Outlet />
       </div>
       <div className="footer">
-        <img src={github} alt="Github Logo" />
-        <img src={email} alt="Email Logo" />
-        <img src={linkedin} alt="LinkedIn Logo" />
+        <img
+          src={github}
+          onClick={(e) => window.open("https://github.com/Petcha73/", "_blank")}
+          alt="Github Logo"
+        />
+        <img
+          src={email}
+          onClick={(e) =>
+            (window.location.href = "mailto:thiaga.prashanth@gmail.com")
+          }
+          alt="Email Logo"
+        />
+        <img
+          src={linkedin}
+          onClick={(e) =>
+            window.open(
+              "https://www.linkedin.com/in/prashanth-thiaga-453178293/",
+              "_blank"
+            )
+          }
+          alt="LinkedIn Logo"
+        />
       </div>
     </div>
   );
