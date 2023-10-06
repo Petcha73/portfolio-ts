@@ -20,9 +20,6 @@ function Layout() {
             <li>
               <NavLink to="/aboutme">About Me</NavLink>
             </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
           </ul>
         </nav>
         <div className="myTitle">
