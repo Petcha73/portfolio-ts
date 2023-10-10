@@ -13,13 +13,6 @@ function AboutMe() {
               alt="Prashanth Thiaga"
             />
           </div>
-
-          <a
-            className="link"
-            href="https://www.linkedin.com/in/prashanth-thiaga-453178293/"
-          >
-            click Here to Check my LinkedIn page
-          </a>
         </div>
 
         <div className="info">
