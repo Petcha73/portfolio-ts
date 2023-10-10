@@ -6,10 +6,16 @@ import next from "../images/next.svg";
 import previous from "../images/previous.svg";
 import Projets from "../components/Projets";
 
-import { Projet1, Projet2 } from "../utils/ProjetData";
+import {
+  Projet1,
+  Projet2,
+  Projet3,
+  Projet4,
+  Projet5,
+} from "../utils/ProjetData";
 
 function Portfolio() {
-  const projectList = [Projet1, Projet2];
+  const projectList = [Projet1, Projet2, Projet3, Projet4, Projet5];
   let [projetNum, setProjetNum] = useState(0);
 
   const handleClick = (value: string, e: React.MouseEvent) => {

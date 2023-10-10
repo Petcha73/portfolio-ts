@@ -18,22 +18,21 @@ function AboutMe() {
         <div className="info">
           <p className="about">
             {" "}
-            Développeur web passionné en reconversion depuis 2020, j'ai
-            consolidé mes compétences à travers des projets de Freelance et des
-            initiatives personnelles visant à mettre en pratique mes acquis.
-            Autodidacte, mon parcours m'a permis d'acquérir une expérience
-            significative dans la réalisation de projets web variés.
-            Aujourd'hui, animé par le désir de toujours progresser.{" "}
+            I'm a ReactJS enthusiast who loves turning ideas into interactive
+            web experiences. With a passion for clean code and user-centric
+            design, I'm here to make your digital visions come to life. Let's
+            build something amazing together!{" "}
           </p>
           <p className="context">
             {" "}
-            Aujourd'hui, animé par le désir de toujours progresser, je suis
-            enthousiaste à l'idée d'intégrer une entreprise dynamique où je
-            pourrais continuer à élargir mes horizons.
+            I'm on the lookout for exciting opportunities as a React developer.
+            With a strong foundation in building dynamic web applications, I'm
+            ready to contribute my skills and enthusiasm to your team. Let's
+            create outstanding web experiences together.
           </p>
           <div className="stack">
-            <p>FrontEnd : React Js Typescript</p>
-            <p>BackEnd : Node Js</p>
+            <p>FrontEnd : ReactJs Typescript</p>
+            <p>BackEnd : NodeJs</p>
             <p>Host : AWS</p>
           </div>
         </div>

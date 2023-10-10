@@ -23,7 +23,7 @@ $green: #042f39;
         margin: 10px;
         padding: 0 10px;
         overflow: hidden;
-        border-bottom: solid 2px #030303;
+        border-bottom: solid 2px $green;
 
         li {
           float: left;
@@ -68,6 +68,8 @@ $green: #042f39;
   .portfolio {
     display: flex;
     height: 100%;
+    width: 100%;
+    align-items: stretch;
 
     .nextButton {
       align-self: center;
@@ -76,13 +78,14 @@ $green: #042f39;
     }
     .main {
       align-self: center;
+      flex: 1;
       display: flex;
       height: 90%;
 
       .info {
         flex: 1;
 
-        border-right: solid 3px $black;
+        border-right: solid 3px $green;
         padding: 50px;
         padding-left: 0;
 
@@ -110,7 +113,7 @@ $green: #042f39;
           text-align: right;
         }
         .stack {
-          border-top: 2px solid $black;
+          border-top: 2px solid $green;
           align-self: flex-start;
           padding: 0 50px;
           font-size: 16px;
@@ -181,7 +184,7 @@ $green: #042f39;
         }
         .stack {
           margin-top: 20px;
-          border-top: 2px solid $black;
+          border-top: 2px solid $green;
           align-self: flex-start;
           padding: 0 50px;
           font-size: 18px;
@@ -190,7 +193,7 @@ $green: #042f39;
       .imageLink {
         flex: 1;
         padding: 50px 0;
-        border-right: solid 3px $black;
+        border-right: solid 3px $green;
 
         display: flex;
         flex-direction: column;
@@ -198,10 +201,12 @@ $green: #042f39;
         align-items: center;
 
         .image {
-          max-width: 350px;
+          max-width: 300px;
 
           .portrait {
             width: 100%;
+            border-radius: 200px;
+            border: 5px solid $green;
           }
         }
       }
@@ -405,6 +410,8 @@ $green: #042f39;
       }
       .main {
         .imageLink {
+          flex: 1 1 auto;
+          justify-content: flex-end;
           .image {
             max-width: 200px;
             .mobile {
@@ -420,8 +427,10 @@ $green: #042f39;
           }
         }
         .info {
+          flex: 2 1 auto;
           border-right: solid 0 $black;
           padding: 0;
+          justify-content: flex-start;
 
           h1 {
             font-size: 20px;
