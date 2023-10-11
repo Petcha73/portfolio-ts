@@ -2,6 +2,7 @@ $myFont: Helvetica, sans-serif;
 $black: #030303;
 $blue: #005500;
 $green: #042f39;
+$gray: #555555;
 
 .layout {
   display: flex;
@@ -23,12 +24,12 @@ $green: #042f39;
         margin: 10px;
         padding: 0 10px;
         overflow: hidden;
-        border-bottom: solid 2px $green;
+        border-bottom: solid 1px $green;
 
         li {
           float: left;
           a {
-            color: $black;
+            color: $gray;
             display: block;
 
             padding: 14px 16px;
@@ -40,6 +41,7 @@ $green: #042f39;
           }
           .active {
             font-weight: bolder;
+            color: $black;
           }
         }
       }
@@ -48,172 +50,197 @@ $green: #042f39;
       margin: 20px;
       align-self: flex-end;
       h1 {
-        font-size: 37px;
+        font-size: 35px;
         font-weight: bolder;
         margin: 0;
       }
       p {
-        font-size: 20px;
+        font-size: 18px;
+        color: $green;
         margin: 0;
       }
     }
   }
 
   .body {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     display: flex;
     align-items: center;
-  }
 
-  .portfolio {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: stretch;
-
-    .nextButton {
-      align-self: center;
-      flex: 0 0 70px;
-      margin: 10px;
-    }
-    .main {
-      align-self: center;
-      flex: 1;
+    .portfolio {
       display: flex;
-      height: 90%;
+      height: 100%;
+      width: 100%;
+      align-items: stretch;
 
-      .info {
+      .nextButton {
+        align-self: center;
+        flex: 0 0 70px;
+        margin: 10px;
+      }
+      .main {
+        align-self: center;
         flex: 1;
-
-        border-right: solid 3px $green;
-        padding: 50px;
-        padding-left: 0;
-
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        height: 90%;
 
-        h1 {
-          font-size: 32px;
-          margin-bottom: 0;
+        .info {
+          flex: 1;
+
+          border-right: solid 2px $green;
+          padding: 50px;
+          padding-left: 0;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+
+          h1 {
+            font-size: 26px;
+            margin-bottom: 0;
+            font-weight: 500;
+          }
+          h3 {
+            margin-top: 2px;
+            font-size: 14px;
+            margin-right: 5px;
+            font-weight: 500;
+          }
+          .about {
+            line-height: 1.1;
+            word-spacing: 1.5px;
+
+            font-size: 16px;
+            max-width: 90%;
+            text-align: right;
+            color: $gray;
+            font-weight: 400;
+          }
+          .context {
+            line-height: 1.1;
+            word-spacing: 1.5px;
+            font-size: 14px;
+            max-width: 80%;
+            text-align: right;
+            color: $gray;
+            font-weight: 400;
+          }
+          .stack {
+            margin-top: 18px;
+            border-top: 1px solid $green;
+            align-self: flex-start;
+            padding: 0 50px;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          .year {
+            font-size: 12px;
+          }
         }
-        h3 {
-          margin-top: 2px;
-          margin-right: 5px;
-        }
-        .about {
-          font-size: 18px;
-          max-width: 90%;
-          text-align: right;
-        }
-        .context {
-          font-size: 14px;
-          max-width: 80%;
-          text-align: right;
-        }
-        .stack {
-          border-top: 2px solid $green;
-          align-self: flex-start;
-          padding: 0 50px;
-          font-size: 16px;
-        }
-        .year {
-          font-size: 16px;
+        .imageLink {
+          flex: 1;
+          align-self: stretch;
+          padding: 50px;
+          padding-right: 0;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .image {
+            max-width: 425px;
+
+            .desktop {
+              position: relative;
+              width: 100%;
+              z-index: -1;
+            }
+            .mobile {
+              width: 20%;
+              margin-bottom: -230px;
+            }
+          }
+
+          .link {
+            margin-top: 25px;
+            font-size: 16px;
+          }
         }
       }
-      .imageLink {
-        flex: 1;
-        align-self: stretch;
-        padding: 50px;
-        padding-right: 0;
+    }
 
+    .aboutMe {
+      .main {
+        align-self: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        height: 90%;
 
-        .image {
-          max-width: 425px;
+        .info {
+          flex: 1;
+          padding: 50px;
 
-          .desktop {
-            position: relative;
-            width: 100%;
-            z-index: -1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .about {
+            line-height: 1.1;
+            word-spacing: 1.5px;
+            font-size: 16px;
+            max-width: 90%;
+            text-align: left;
+            color: $gray;
+            font-weight: 400;
           }
-          .mobile {
-            width: 20%;
-            margin-bottom: -230px;
+          .context {
+            line-height: 1.1;
+            word-spacing: 1.5px;
+            font-size: 14px;
+            max-width: 80%;
+            text-align: left;
+            color: $gray;
+            font-weight: 400;
+          }
+          .stack {
+            margin-top: 20px;
+            border-top: 1px solid $green;
+            align-self: flex-start;
+            padding: 0 50px;
+            font-size: 14px;
+            font-weight: 400;
           }
         }
+        .imageLink {
+          flex: 1;
+          padding: 50px 0;
+          border-right: solid 2px $green;
 
-        .link {
-          margin-top: 25px;
-          font-size: 20px;
-        }
-      }
-    }
-  }
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
-  .aboutMe {
-    .main {
-      align-self: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: 90%;
+          .image {
+            max-width: 300px;
 
-      .info {
-        flex: 1;
-        padding: 50px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .about {
-          font-size: 20px;
-          max-width: 90%;
-          text-align: left;
-        }
-        .context {
-          font-size: 16px;
-          max-width: 80%;
-          text-align: left;
-        }
-        .stack {
-          margin-top: 20px;
-          border-top: 2px solid $green;
-          align-self: flex-start;
-          padding: 0 50px;
-          font-size: 18px;
-        }
-      }
-      .imageLink {
-        flex: 1;
-        padding: 50px 0;
-        border-right: solid 3px $green;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .image {
-          max-width: 300px;
-
-          .portrait {
-            width: 100%;
-            border-radius: 200px;
-            border: 5px solid $green;
+            .portrait {
+              width: 100%;
+              border-radius: 200px;
+              border: 5px solid $green;
+            }
           }
         }
       }
     }
   }
+
   .footer {
-    flex: 0 0 100px;
+    flex: 0 0 80px;
     background-color: $green;
     display: flex;
     align-items: center;
@@ -253,105 +280,108 @@ $green: #042f39;
         }
       }
     }
-    .portfolio {
-      .nextButton {
-        flex: 0 0 60px;
-      }
-      .main {
-        flex-direction: column-reverse;
-        .info {
-          border-right: none;
-          padding: 5px;
-          align-items: center;
-          h1 {
-            font-size: 30px;
+    .body {
+      .portfolio {
+        .nextButton {
+          flex: 0 0 60px;
+        }
+        .main {
+          flex-direction: column-reverse;
+          .info {
+            border-right: none;
+            padding: 5px;
+            align-items: center;
+            h1 {
+              font-size: 30px;
+            }
+            h3 {
+              margin-top: 4px;
+            }
+            .about {
+              font-size: 16px;
+              max-width: 100%;
+              text-align: center;
+              margin: 5px;
+            }
+            .context {
+              font-size: 14px;
+              max-width: 90%;
+              text-align: center;
+            }
+            .stack {
+              margin-top: 20px;
+              border-top: 1px solid $black;
+              align-self: center;
+              text-align: center;
+              padding: 0 50px;
+              font-size: 14px;
+            }
+            .year {
+              font-size: 12px;
+            }
           }
-          h3 {
-            margin-top: 4px;
-          }
-          .about {
-            font-size: 20px;
-            max-width: 100%;
-            text-align: center;
-            margin: 5px;
-          }
-          .context {
-            font-size: 15px;
-            max-width: 90%;
-            text-align: center;
-          }
-          .stack {
-            margin-top: 10px;
-            border-top: 2px solid $black;
-            align-self: center;
-            text-align: center;
-            padding: 0 50px;
-            font-size: 15px;
-          }
-          .year {
-            font-size: 12px;
+          .imageLink {
+            flex: 1;
+            padding: 0;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .image {
+              max-width: 350px;
+
+              .desktop {
+                position: relative;
+                width: 100%;
+                z-index: -1;
+              }
+              .mobile {
+                width: 20%;
+                margin-bottom: -220px;
+              }
+            }
+
+            .link {
+              margin: 10px;
+              font-size: 16px;
+            }
           }
         }
-        .imageLink {
-          flex: 1;
-          padding: 0;
-          margin-top: 20px;
-          display: flex;
+      }
+
+      .aboutMe {
+        .main {
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          .info {
+            padding: 10px;
+            align-items: center;
+            justify-content: flex-start;
 
-          .image {
-            max-width: 350px;
-
-            .desktop {
-              position: relative;
-              width: 100%;
-              z-index: -1;
+            .about {
+              font-size: 16px;
+              text-align: center;
             }
-            .mobile {
-              width: 20%;
-              margin-bottom: -220px;
+            .context {
+              font-size: 14px;
+              text-align: center;
+              margin-top: 10px;
+            }
+            .stack {
+              margin-top: 20px;
+              align-self: center;
+              text-align: center;
+              font-size: 14px;
             }
           }
-
-          .link {
-            margin: 10px;
-
-            font-size: 18px;
-          }
-        }
-      }
-    }
-
-    .aboutMe {
-      .main {
-        flex-direction: column;
-        .info {
-          padding: 10px;
-          align-items: center;
-          justify-content: flex-start;
-
-          .about {
-            text-align: center;
-          }
-          .context {
-            font-size: 18px;
-            text-align: center;
-            margin-top: 10px;
-          }
-          .stack {
-            align-self: center;
-            text-align: center;
-            font-size: 18px;
-          }
-        }
-        .imageLink {
-          padding: 0;
-          border-right: none;
-          justify-content: flex-end;
-          .image {
-            max-width: 300px;
+          .imageLink {
+            padding: 0;
+            border-right: none;
+            justify-content: flex-end;
+            .image {
+              max-width: 300px;
+            }
           }
         }
       }
@@ -371,8 +401,14 @@ $green: #042f39;
 @media (max-width: 600px) {
   .layout {
     .header {
-      flex: 0 0 120px;
-      padding: 0 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 92%;
+      background-color: #fff;
+      padding-bottom: 30px;
+      height: 120px;
+
       nav {
         align-self: flex-end;
 
@@ -400,108 +436,119 @@ $green: #042f39;
       }
     }
 
-    .portfolio {
-      .nextButton {
-        flex: 0 0 40px;
-        margin: 5px;
-        img {
-          width: 40px;
+    .body {
+      padding-top: 150px;
+      padding-bottom: 60px;
+
+      .portfolio {
+        .nextButton {
+          flex: 0 0 40px;
+          margin: 5px;
+          img {
+            width: 40px;
+          }
         }
-      }
-      .main {
-        .imageLink {
-          flex: 1 1 auto;
-          justify-content: flex-end;
-          .image {
-            max-width: 200px;
-            .mobile {
-              margin-bottom: -100px;
+        .main {
+          .imageLink {
+            flex: 1 1 auto;
+            justify-content: flex-end;
+            .image {
+              max-width: 200px;
+              .mobile {
+                margin-bottom: -100px;
+              }
+            }
+
+            .link {
+              margin: 0px;
+              font-size: 14px;
+              text-align: center;
+              padding-bottom: 20px;
             }
           }
+          .info {
+            flex: 2 1 auto;
+            border-right: none;
+            padding: 0;
+            justify-content: flex-start;
 
-          .link {
-            margin: 0px;
-            font-size: 14px;
-            text-align: center;
-            padding: 10px 0;
-          }
-        }
-        .info {
-          flex: 2 1 auto;
-          border-right: solid 0 $black;
-          padding: 0;
-          justify-content: flex-start;
-
-          h1 {
-            font-size: 20px;
-            margin-top: 20px;
-          }
-          h3 {
-            margin-top: 2px;
-            margin-right: 5px;
-            font-size: 15px;
-          }
-          .about {
-            font-size: 15px;
-            max-width: 95%;
-            text-align: center;
-            margin: 5px;
-          }
-          .context {
-            font-size: 12px;
-            max-width: 100%;
-            text-align: center;
-          }
-          .stack {
-            border-top: 1px solid $black;
-            align-self: center;
-            text-align: center;
-            padding: 0 40px;
-            font-size: 12px;
-          }
-          .year {
-            font-size: 10px;
-            margin: 10px;
+            h1 {
+              font-size: 18px;
+              margin-top: 18px;
+            }
+            h3 {
+              margin-top: 4px;
+              margin-right: 5px;
+              font-size: 14px;
+            }
+            .about {
+              font-size: 14px;
+              max-width: 95%;
+              text-align: center;
+              margin: 5px;
+            }
+            .context {
+              font-size: 12px;
+              max-width: 100%;
+              text-align: center;
+            }
+            .stack {
+              margin-top: 20px;
+              border-top: 1px solid $gray;
+              align-self: center;
+              text-align: center;
+              padding: 0 40px;
+              font-size: 12px;
+            }
+            .year {
+              font-size: 10px;
+              margin: 10px;
+            }
           }
         }
       }
-    }
 
-    .aboutMe {
-      .main {
-        .info {
-          .about {
-            font-size: 15px;
-            max-width: 90%;
-            text-align: center;
+      .aboutMe {
+        .main {
+          .info {
+            .about {
+              font-size: 14px;
+              max-width: 90%;
+              text-align: center;
+            }
+            .context {
+              font-size: 12px;
+              max-width: 80%;
+              text-align: center;
+              margin-top: 0;
+            }
+            .stack {
+              border-top: 1px solid $black;
+              align-self: center;
+              text-align: center;
+              padding: 0 40px;
+              font-size: 12px;
+            }
           }
-          .context {
-            font-size: 12px;
-            max-width: 80%;
-            text-align: center;
-            margin-top: 0;
-          }
-          .stack {
-            border-top: 1px solid $black;
-            align-self: center;
-            text-align: center;
-            padding: 0 40px;
-            font-size: 12px;
-          }
-        }
-        .imageLink {
-          .image {
-            max-width: 190px;
+          .imageLink {
+            .image {
+              max-width: 190px;
+            }
           }
         }
       }
     }
 
     .footer {
-      flex: 0 0 60px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 92%;
+      height: 60px;
+
       img {
         height: 30px;
-        margin: 8px;
+        margin-right: 8px;
       }
     }
   }

@@ -55,7 +55,7 @@ function Projets({
           />
         </div>
 
-        <a className="link" href={link}>
+        <a className="link" href={link} target="_blank" rel="noreferrer">
           click Here to Check the App
         </a>
       </div>
