@@ -16,12 +16,12 @@ export const Projet1: Projet = {
   title: "304",
   subTitle: "A south Indian card game",
   about:
-    " 304 (Pronounced 'three nought four') is a card game popular in South India. It is a four-player partnership point-trick game with bidding. From the rank and value of the cards, with the Jack and Nine promoted above the Ace, it is clear that it belongs to the Jass family, which originated in the Netherlands. It is probable that 304 is derived from a game brought to Sri Lanka by Dutch traders in the 17th or 18th century.",
+    "It is a four-player partnership point-trick game with bidding.Tt is clear that it belongs to the Jass family, which originated in the Netherlands. It is probable that 304 is derived from a game brought to Sri Lanka by Dutch traders in the 17th or 18th century.",
   context:
-    "From the young age I was amazed by this game, but the game is usaly played between experts for money, finiding 4 amateurs who would accept to play is not easy. I looked for a single player version, couldn't find so created it.",
-  front: "ReactJs, Javascript, HTML, CSS, Material-UI",
+    "From the young age I was amazed by this game. But 304 is usaly played between experts for money. I Made a simplified single player version so that anyone can discover the beuty of this game.",
+  front: "ReactJs, Material-UI",
   back: "-",
-  host: "Github, Amplyfy AWS",
+  host: "Amplyfy AWS",
   year: "2023",
   macUrl: `./assets/304-mac.png`,
   phoneUrl: `./assets/304-phone.png`,
@@ -30,12 +30,12 @@ export const Projet1: Projet = {
 
 export const Projet2: Projet = {
   title: "World Wide Zodiacs",
-  subTitle: "All your zodiac signs in a single place",
+  subTitle: "A single spot to know all",
   about:
-    "A Fun app which calculates your zodiac sign, in different cultures world wide (west, chinese, indian, celtic, etc)",
+    "A Fun app which calculates your zodiac signs, in different cultures world wide (west, chinese, indian, celtic, etc)",
   context:
-    "I like the magical side of astrology, wante to groupe all the magic in a single spot, and the algorthm for finding the signs are very intresting, especially indian astronology(had to find the exact location of the moon in the sky on the given date and time) ",
-  front: "ReactJs, Javascript, HTML, CSS",
+    "I like the magical side of astrology, wanted to groupe all the magic in a single spot, and the algorthm for finding the signs are very intresting, especially indian astronology(had to find the exact location of the moon in the sky on the given date and time) ",
+  front: "ReactJs",
   back: "NodeJs",
   host: "Heroku",
   year: "2023",
