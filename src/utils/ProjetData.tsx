@@ -46,12 +46,12 @@ export const Projet2: Projet = {
 
 export const Projet3: Projet = {
   title: "Vivaram",
-  subTitle: "A landing page",
+  subTitle: "A landing page for a Start-Up",
   about:
-    "This landing page for a startup project around a mobile app: Vivaram : A tool to connect and enhance connections with new people in the real world. Those who are present physically by your side. ",
+    "Vivaram : A tool to connect and enhance connections with new people who are present physically by your side. ",
   context:
-    "I learned many new skills through this projects: contact through nodemailer, transltation with react-i18next and styled-components for css",
-  front: "ReactJs, Javascript, HTML, CSS, styled-components",
+    "I learned many new skills through this projects: contact form through nodemailer, transltation with react-i18next and styled-components for css",
+  front: "ReactJs styled-components",
   back: "express Js, NodeJs, nodemailer",
   host: "Heroku",
   year: "2021",
