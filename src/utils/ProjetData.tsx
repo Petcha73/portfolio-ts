@@ -66,26 +66,12 @@ export const Projet4: Projet = {
   about:
     "An application to keep track of all played games in a club, stats can be generated, has special admin account to input and delete data",
   context:
-    "I play billiard and carrom in a club, we always had confusion on who is the best and who won the most, this app was to create track",
-  front: "ReactJs, Javascript, HTML, CSS",
+    "I play billiard and carrom in a club, we always had confusion on who is the best and who won the most, this app was created to keep track",
+  front: "ReactJs",
   back: "Firestore, Firebase",
   host: "Amplyfy AWS",
   year: "2022",
   macUrl: "./assets/mat-mac.png",
   phoneUrl: "./assets/mat-phone.png",
   link: "https://master.d3mve56adqah21.amplifyapp.com/",
-};
-
-export const Projet5: Projet = {
-  title: "Weather",
-  subTitle: "A Weather Forecast App",
-  about: "The App recovers data from an extrenal API",
-  context: "An app created to practice my ReactJs skills",
-  front: "ReactJs, Javascript, HTML, CSS",
-  back: "API",
-  host: "Github, Amplyfy AWS",
-  year: "2021",
-  macUrl: "./assets/wet-mac.png",
-  phoneUrl: "./assets/wet-phone.png",
-  link: "https://master.d26hxeiwcqh3et.amplifyapp.com/",
 };
