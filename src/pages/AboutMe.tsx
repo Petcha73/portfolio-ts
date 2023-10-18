@@ -32,8 +32,8 @@ function AboutMe() {
           </p>
           <div className="stack">
             <p>FrontEnd : ReactJs Typescript</p>
-            <p>BackEnd : NodeJs</p>
-            <p>Host : AWS</p>
+            <p>BackEnd : NodeJs, Firebase</p>
+            <p>Host : AWS Amplyfy, Heroku</p>
           </div>
         </div>
       </div>
